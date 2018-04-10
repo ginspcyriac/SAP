@@ -1,0 +1,224 @@
+
+
+API Details
+
+
+1. Entrol Function 
+
+      1. Prosumer
+		{
+		"function":"enrol",
+		"arguments":["Neeraj","Prosumer","aditi@gmail.com","12313","sf", "2fd", "Jaipur", "sdf", "sdaf", "sdf"],
+		"async": false
+		}  
+		
+	  2. Regulator
+		{
+		"function":"enrol",
+		"arguments":["jemas","Regulator","james@gmail.com","12313","sf", "2fd", "Bangalore", "sdf", "sdaf", "sdf"],
+		"async": false
+		}
+		
+	  3. Retailer
+		{
+		"function":"enrol",
+		"arguments":["Dimple","Retailer","dimple@gmail.com","12313","sf", "2fd", "Bangalore", "sdf", "sdaf", "sdf"],
+		"async": false
+		}
+		
+	  4. Consumer
+		{
+		"function":"enrol",
+		"arguments":["jack","Consumer","dimple@gmail.com","12313","sf", "2fd", "Bangalore", "sdf", "sdaf", "sdf"],
+		"async": false
+		}
+		
+		
+
+2.Get Entrol Data
+
+
+{
+"function":"getAll_EnrollData",
+"arguments":[],
+"async": false
+}
+
+
+
+
+3. Register Prosumer
+
+{
+"function":"register_G_P",
+"arguments":["NeeJaiPro531","WATER", "250", "jan", "13", "01-05-2016", "01-08-2016", "4", "4", "4", "4", "4", "5", "5", "5", "5", "5", "5", "5", "5", "5", "5", "5", "5", "5", "5", "5", "5", "5", "5", "5", "5", "5", "5", "5", "5", "5", "5", "5", "5", "5", "5", "5", "5", "5", "5", "5", "5", "5", "5", "5", "5", "5", "5", "5"],
+"async": false
+}
+
+output
+
+NeeJaiPro53120180405124302
+
+
+4. Register REGULATOR
+
+{
+"function":"registerRegulator",
+"arguments":["jemBanReg482","solar","jan","12313","30", "01-08-2016", "01-08-2016"]
+}
+
+Output
+
+  jemBanReg48220180405124848
+
+5.Register Retailer
+
+
+{
+"function":"register_R_C",
+"arguments":["DimBanRet517","WIND","jan","12313","100", "01-08-2016", "01-08-2016","jemBanReg48220180405124848"]
+}
+
+Output
+
+DimBanRet51720180405124923
+
+6. Register Customer
+
+{
+"function":"registerCustomer",
+"arguments":["{\"ConsumerParticipantID\":\"jacBanCon475\",\"PlantType\":\"Solar\",\"InstallationMonth\":\"Jan\",\"shift1Total\":8,\"shift2Total\":9,\"shift3Total\":4,\"shift4Total\":8,\"shift1\":27,\"shift2\":31,\"shift3\":13,\"shift4\":27,\"Retailer_participant_id\":\"DimBanRet260\",\"Retailer_registration_id\":\"DimBanRet51720180405055111\",\"Prosumer_registration_id\":\"ABrJaiPro92220180404140929\",\"Prosumer_participant_id\":\"ABrJaiPro361\",\"Token_remuneration_type\":\"Reward Points\",\"Value\":\"10\",\"ConsumerRegistrationId\":\"jamBanCus32320180214090730\",\"Start_date\":\"2018-02-09T18:30:00.000Z\",\"End_date\":\"2018-02-12T18:30:00.000Z\",\"S_0000_0030Selected\":true,\"S_0030_0100Selected\":true,\"S_0100_0130Selected\":true,\"S_0130_0200Selected\":false,\"S_0200_0230Selected\":false,\"S_0230_0300Selected\":false,\"S_0300_0330Selected\":true,\"S_0330_0400Selected\":true,\"S_0400_0430Selected\":false,\"S_0430_0500Selected\":false,\"S_0500_0530Selected\":false,\"S_0530_0600Selected\":false,\"S_0600_0630Selected\":false,\"S_0630_0700Selected\":false,\"S_0700_0730Selected\":true,\"S_0730_0800Selected\":false,\"S_0800_0830Selected\":false,\"S_0830_0900Selected\":false,\"S_0900_0930Selected\":false,\"S_0930_1000Selected\":true,\"S_1000_1030Selected\":true,\"S_1030_1100Selected\":false,\"S_1100_1130Selected\":true,\"S_1130_1200Selected\":false,\"S_1200_1230Selected\":false,\"S_1230_1300Selected\":false,\"S_1300_1330Selected\":true,\"S_1330_1400Selected\":false,\"S_1400_1430Selected\":true,\"S_1430_1500Selected\":false,\"S_1500_1530Selected\":true,\"S_1530_1600Selected\":false,\"S_1600_1630Selected\":false,\"S_1630_1700Selected\":false,\"S_1700_1730Selected\":true,\"S_1730_1800Selected\":false,\"S_1800_1830Selected\":false,\"S_1830_1900Selected\":false,\"S_1900_1930Selected\":true,\"S_1930_2000Selected\":true,\"S_2000_2030Selected\":true,\"S_2030_2100Selected\":true,\"S_2100_2130Selected\":true,\"S_2130_2200Selected\":false,\"S_2200_2230Selected\":false,\"S_2230_2300Selected\":true,\"S_2300_2330Selected\":true,\"S_2330_0000Selected\":false,\"InjectionCapacity\":59}"]
+}
+
+output
+jacBanCon47520180405125104
+
+7. get Prosumer
+
+{
+"function":"getAll_Reg_G_P_Data",
+"arguments":[],
+"async": false
+}
+
+
+8. get Retailer
+
+{
+"function":"getAll_Reg_R_C_Data",
+"arguments":[],
+"async": false
+}
+
+
+9. get RegulatorData
+
+{
+"function":"getAllRegulatorData",
+"arguments":[],
+"async": false
+}
+
+
+10. Sign-UP
+
+{
+"function":"sign_up",
+"arguments":["NeeJaiPro531", "NeeJaiPro53120180405124302", "DimBanRet517", "DimBanRet51720180405124923", "10", "2", "01-08-2016", "01-08-2016", "cash", "100", "4", "4", "4", "3", "0", "0", "0", "0", "8", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "3", "0", "0", "0", "0", "0", "5", "5","jacBanCon47520180405125104"]
+}
+
+
+11. Get SignUp
+
+{
+"function":"getAll_signUP_Data",
+"arguments":[],
+"async": false
+}
+
+12. Generate Token
+
+{
+"function":"generate_Token",
+"arguments":["NeeJaiPro53120180405124302","S_2000_2030","3","456786543567","29/T Street","New York","560100","US"],
+"async": false
+}
+
+
+
+13. transferTokenToRetailer
+
+{
+"function":"transferTokenToRetailer",
+"arguments":["NeeJaiPro53120180405124302","S_2000_2030","NeeJaiPro5312018040512430220180405133324"],
+"async": false
+}
+
+
+14. get all Token
+
+
+{
+"function":"getAll_TokenData",
+"arguments":[],
+"async": false
+}
+
+15. transferTokenToCustomer
+
+{
+"function":"transferTokenToCustomer",
+"arguments":["NeeJaiPro5312018040512430220180405133324"],
+"async": false
+}
+
+16. Get Customer Data
+
+{
+"function":"getAllCustomerData",
+"arguments":[],
+"async": false
+}
+
+17. Get History
+
+{
+"function":"getHistoryDetails",
+"arguments":["NeeJaiPro5312018040512430220180405133324"],
+"async": false
+}
+
+18. GetTokenByAgreement
+
+{
+"function":"getTokensByAgreementID",
+"arguments":["AG20180405133246","0","456786543569"],
+"async": false
+}
+
+19. getTokensByProsumerID
+
+{
+"function":"getTokensByProsumerID",
+"arguments":["NeeJaiPro53120180405124302","0","456786543569"],
+"async": false
+}
+
+20. getTokensByDateRange
+
+{
+"function":"getTokensByDateRange",
+"arguments":["0","456786543569"],
+"async": false
+}
+
+21. getTokensByAgreementID
+
+{
+"function":"getTokensByAgreementID",
+"arguments":[],
+"async": false
+}
+
+
+
